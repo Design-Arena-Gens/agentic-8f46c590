@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 0.75rem;
+}
+
+/* Smooth focus ring */
+.input-base {
+  @apply w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200;
+}
+
+.input-muted {
+  @apply bg-slate-100 text-slate-700;
+}
+
+.label-sm {
+  @apply text-[11px] font-medium text-slate-500;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-md bg-brand-600 px-3 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-200;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center rounded-md px-2 py-1.5 text-slate-500 hover:bg-slate-100 hover:text-slate-700;
+}
+
+.card {
+  @apply rounded-xl border border-slate-200 bg-white shadow-sm;
+}
